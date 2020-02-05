@@ -26,6 +26,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
+#loading image dataset
 datadir ='E:/image_data'
 catagories = ['trump','obama','faizan','mamoa','tom']
 
@@ -60,7 +61,6 @@ batch_size = 30
 num_classes = 5
 epochs = 30
 input_shape = (150, 150, 3)
-
 
 
 vgg = vgg16.VGG16(include_top=False, weights='imagenet', 
@@ -136,8 +136,6 @@ ax2.set_xlabel('Epoch')
 ax2.set_title('Loss')
 l2 = ax2.legend(loc="best")
 
-
-# In[5]:
 
 
 import pandas as pd
