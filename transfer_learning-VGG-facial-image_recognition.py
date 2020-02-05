@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
-
-
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
@@ -145,7 +142,7 @@ layers = [(layer, layer.name, layer.trainable) for layer in vgg_model.layers]
 pd.DataFrame(layers, columns=['Layer Type', 'Layer Name', 'Layer Trainable'])
 
 
-# In[ ]:
+
 
 
 
