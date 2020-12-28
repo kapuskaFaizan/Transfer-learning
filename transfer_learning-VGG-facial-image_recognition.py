@@ -23,7 +23,7 @@ import numpy as np
 import random
 
 #loading image dataset
-datadir ='E:/image_data'
+datadir ='location/to/data_set'
 catagories = ['trump','obama','faizan','mamoa','tom']
 
 img_size = 150
@@ -133,16 +133,10 @@ ax2.set_title('Loss')
 l2 = ax2.legend(loc="best")
 
 
-
 import pandas as pd
 pd.set_option('max_colwidth', -1)
 
+
 layers = [(layer, layer.name, layer.trainable) for layer in vgg_model.layers]
 pd.DataFrame(layers, columns=['Layer Type', 'Layer Name', 'Layer Trainable'])
-
-
-
-
-
-
 
