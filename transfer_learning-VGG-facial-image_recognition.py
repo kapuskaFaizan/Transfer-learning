@@ -1,5 +1,4 @@
 
-
 from tensorflow.keras.datasets import cifar10
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
@@ -110,7 +109,7 @@ image_pre = get_features(vgg_model,scaled_x)
 #prediction for a new image entered
 model.predict(image_pre)
 
-
+#plot performance
 f, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
 t = f.suptitle('Pre-trained CNN (Transfer Learning) Performance', fontsize=12)
 f.subplots_adjust(top=0.85, wspace=0.3)
